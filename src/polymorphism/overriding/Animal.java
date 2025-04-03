@@ -4,7 +4,7 @@ public class Animal {
     public void breath(){
         System.out.println("animal breath metot çalıştı");
     }
-    public void move(){
+    protected void move(){
         System.out.println("animal move metot çalıştı");
     }
 }
