@@ -39,6 +39,25 @@ select * from yazarlar4;
 
 
 
+--10.04.2025
+select * from yazarlar4
+--tablo adını değiştirme
+alter table yazarlar4 rename to yazarlar44;
+
+--tabloya sonradan sütun ekleme
+alter table yazarlar44 add column eklenen_sutun varchar(15) unique;  
+
+--tablodan sütun silme
+alter table yazarlar44 drop column soy_isim;
+
+--sütun adını değiştirme
+alter table yazarlar44 rename column isim to name;
+
+--sütun data tipini değiştirme
+alter table yazarlar44 alter column name type char(20);
+
+--data update etmek
+update yazarlar44 set name='velihan' where id=2;
 
 
 
