@@ -35,5 +35,15 @@ public class Built_In_Interfaces {
 
          BiPredicate<String, String> start = (str,prefix) -> str.startsWith(prefix);
          System.out.println(start.test("patika","pad"));
+
+         // Function<T, R> ve BiFunction<T, U, R>
+         Function<String,Integer> lengthCalc = s -> s.length();
+         System.out.println(lengthCalc.apply("patikaDev"));
+
+         Function<String,String> toUpper = s -> s.toUpperCase();
+         System.out.println(toUpper.apply("mesut"));
+
+         BiFunction<Integer,Integer, String> sum = (a,b)->"Toplam : "+ (a+b);
+         System.out.println(sum.apply(4,6));
      }
 }
